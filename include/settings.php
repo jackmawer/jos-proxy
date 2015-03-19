@@ -99,7 +99,7 @@ $ads2 = <<<HTML
 HTML;
 $linkback = '1';
 $_url = <<<HTML
-startpage.com
+duckduckgo.co.uk
 HTML;
 $googlea = <<<HTML
 1
