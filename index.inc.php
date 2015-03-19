@@ -146,7 +146,7 @@ switch ($data['category']){
 			?>
 	</form>
 	<div id="footer">
-		<?php include 'include/settings.php'; echo $sitefooter; ?> &nbsp;  <?php include 'include/current.php'; echo $linkbackshow; ?> <?php echo $GLOBALS['_version'] ?></div>
+		<p>Copuyright 2015 Jack Mawer - Provided as a service for JOS users</p></div>
 	</div>
 </div>
 </body>
