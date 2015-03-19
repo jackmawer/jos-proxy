@@ -35,7 +35,7 @@ echo $googleacode;
 }
 ?>
 <head>
-<title><?php include 'include/settings.php'; echo $sitetitle; ?></title>
+<title>JOS Browser</title>
 <link rel="stylesheet" type="text/css" href="include/style.css">
 <script type="text/javascript">
 document.getElementById("optionsjs").style.display = 'block';
@@ -51,10 +51,9 @@ function toggle(id) {
 </head>
 <body onload="document.getElementById('address_box').focus()">
 <div id="container">
-	<h1 id="title"><?php include 'include/settings.php'; echo $sitetitle; ?></h1>
+	<h1 id="title">JOS Browser - Home</h1>
 	<ul class="address_tabs">
-		<li id="tab1" class="selected"><a>Browse</a></li>
-		<li id="tab2"><a href="http://www.proxyhelp.org/mybb">Support</a></li>
+		<li id="tab1" class="selected"><a>Home</a></li>
 	</ul>
 <?php
 if ($googlet == '1'){
@@ -90,7 +89,7 @@ switch ($data['category']){
                     case 'external':
                         switch ($data['error']) {
                             case 1:
-                                $message = 'The URL you\'re attempting to access is blacklisted by this server. Please select another URL.';
+                                $message = 'The URL you\'re attempting to access is blacklisted. Please select another URL.';
                                 break;
                             case 2:
                                 $message = 'The URL you entered is malformed. Please check whether you entered the correct URL or not.';
@@ -108,8 +107,8 @@ switch ($data['category']){
                                  . 'Requested file size is <b>' . number_format($GLOBALS['_content_length']/1048576, 2) . ' MB</b>';
                         break;
                     case 'hotlinking':
-                        $message = 'It appears that you are trying to access a resource through this proxy from a remote Website.<br />'
-                                 . 'For security reasons, please use the form below to do so.';
+                        $message = 'This service is for users of JOS.<br />'
+                                 . 'Please use JOS to browse using this system.';
                         break;
                 }
                 break;
@@ -143,11 +142,7 @@ switch ($data['category']){
 				}
 			}
 			echo '</div></ul>';
-			if ($homepageimage == "1") {
-				echo '<img src="include/image.php" />';
-			} else {
-				echo $homepage;
-			}
+			echo '<h3>Use the bar above to browse the internet.</h3>';
 			?>
 	</form>
 	<div id="footer">
